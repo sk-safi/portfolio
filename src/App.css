@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Oi&family=RocknRoll+One&display=swap');
+
+
+
+
+:var {
+  --primary-orange : #f9ab00;
+  --primary-dark : rgba(255,255,255,0)
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +49,115 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+
+
+/************************  NAVBAR*************************/
+
+nav {
+  width: auto;
+  display: flex;
+  z-index: 2;
+}
+
+.logo {
+  width: 7Srem;
+  height: 6rem;
+
+}
+
+nav a.nav_link {
+  font-weight: 500;
+  letter-spacing: 0.0375rem;
+  cursor: pointer-events;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav >li>a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: antiquewhite !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding:  0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid orange;
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid orange;
+}
+
+/************************* HEADER ***********************************/
+
+
+.header-wraper {
+  position : relative ;
+  background: url(portfolio-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info h1 {
+  color: #f9ab00;
+  text-transform: uppercase;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+/********************* TYPED-TEXT *******************************/
+ .typed-text {
+   font-size: 2rem;
+   color: azure;
+   font-family: 'DotGothic16', sans-serif;
+
+ }
+
+
+ .btn-main-offer {
+   border: 1px solid red;
+   text-transform: uppercase;
+   border-radius: 0;
+   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+   margin: 2rem;
+   font-family: 'DotGothic16', sans-serif;
+   color: azure;
+   letter-spacing: 0.0375rem;
+
+ }
+
+ /******************* PARTICLES ************************/
+
+ .tsparticles-canvas-el {
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    z-index: 1;
+ }

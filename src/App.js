@@ -4,11 +4,10 @@ import "./App.css";
 import Navbar from "./Component/Navbar";
 import Header from "./Component/Header";
 import Particles from "react-particles-js";
-import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Particles
         params ={{
           particles : {
@@ -32,7 +31,7 @@ function App() {
       <Navbar/>
       <Header/>
       <h1> portfolio</h1>
-    </BrowserRouter>
+    </>
   );
 }
 
